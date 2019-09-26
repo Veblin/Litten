@@ -5,6 +5,12 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "node",
+            "request": "attach",
+            "name": "Attach",
+            "port": 9229
+        },
+        {
         "name": "Chrome",
         "type": "chrome",
         "request": "launch",
@@ -12,7 +18,7 @@
         "webRoot": "${workspaceFolder}/src",
         "sourceMapPathOverrides": {
             "webpack:///src/*": "${webRoot}/*"
-        }
+            }
         }
     ]
 }
